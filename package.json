@@ -1,0 +1,24 @@
+{
+  "name": "mobile-sidenav",
+  "version": "0.0.1",
+  "description": "mobile-nav",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npirotte/mobile-sidenav.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npirotte/mobile-sidenav/issues"
+  },
+  "homepage": "https://github.com/npirotte/mobile-sidenav",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}
