@@ -40,7 +40,7 @@
 
         hammertime.on('panstart', function(event)
         {
-            console.log(event.center.x);
+            if(debug) console.log(event.center.x);
 
             if (_this.CanDrag || event.center.x < 50) {
 
