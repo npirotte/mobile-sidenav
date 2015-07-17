@@ -1,0 +1,51 @@
+/**
+*
+* Style de la navigation mobile
+*
+**/
+
+@mobile-nav-background: white;
+@mobile-nav-padding: 30px; 
+@mobile-nav-max-width: 300px; 
+@mobile-nav-border-color: #dddfe0;
+
+#mobile-nav
+{
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+
+  width: 90%;
+  max-width: @mobile-nav-max-width;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  padding: @mobile-nav-padding;
+
+  background: @mobile-nav-background;
+  border-right: solid 1px @mobile-nav-border-color;
+
+  font-weight: 600;
+  font-size: 1.2em;
+
+  transition: transform .3s;
+  
+  .nav-dragged & 
+  {
+    transition: none;
+  }
+}
+
+/**
+*
+* Style du layout quand la navigation est ouverte
+*
+**/
+
+body.nav-openned
+{
+  overflow: hidden;
+}
