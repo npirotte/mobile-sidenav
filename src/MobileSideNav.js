@@ -26,7 +26,7 @@
             (-180 + ANGLE_RESTRINCTION / 2)
         ];
 
-    window.MobileNav = function($context, options)
+    window.MobileSideNav = function($context, options)
     {
         this.$context = $context;
         this.options = options;
