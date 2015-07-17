@@ -20,7 +20,9 @@ Example
 
 ```js
 var options = {
-  menus : $('#foo ul.nav'),
+  menus : {
+    mainNav : $('#foo ul.nav')
+  },
   afterDraw : function($context)
   {
     initPage($context);
