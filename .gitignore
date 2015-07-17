@@ -5,5 +5,8 @@
 */cache/!index.html
 */cache/!.htaccess
 
-node_modules
-bower_components
+#Bower
+bower_components/
+
+#Npm 
+node_modules/
