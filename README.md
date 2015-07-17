@@ -7,9 +7,9 @@ Add js and css file to html
 
 Mobile side nav is object oriented
 
-´´´js
+```js
 var sideNav = new MobileSideNav(options)
-´´´
+```
 
 Options are :
 
@@ -18,7 +18,7 @@ Options are :
 
 Example
 
-´´´js
+```js
 var options = {
   menus : $('#foo ul.nav'),
   afterDraw : function($context)
@@ -26,4 +26,4 @@ var options = {
     initPage($context);
   }
 }
-´´´
+```
