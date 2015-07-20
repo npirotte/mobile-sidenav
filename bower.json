@@ -17,6 +17,6 @@
   ],
   "dependencies": {
     "hammer.js": "~2.0.4",
-    "jQuery": "~1"
+    "jQuery": "~1.11.3"
   }
 }
