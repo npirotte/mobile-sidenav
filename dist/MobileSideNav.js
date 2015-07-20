@@ -4,7 +4,7 @@
 *
 **/
 
-+function()
++function(w)
 {
 
     'use strict';
@@ -26,7 +26,7 @@
             (-180 + ANGLE_RESTRINCTION / 2)
         ];
 
-    window.MobileSideNav = function($context, options)
+    w.MobileSideNav = function($context, options)
     {
         this.$context = $context;
         this.options = options;
@@ -103,7 +103,7 @@
         }); 
     };
 
-    MobileNav.prototype.Increment = function(velocity)
+    w.MobileSideNav.prototype.Increment = function(velocity)
     {
         var ammount = this.Position - (velocity * 10),
         _this = this;
@@ -129,7 +129,7 @@
         }
     };
 
-    MobileNav.prototype.Draw = function()
+    w.MobileSideNav.prototype.Draw = function()
     {
         // on crée l'élément
         var $menuDOM = $(document.createElement('DIV')),
@@ -165,9 +165,9 @@
         if (debug) console.log(this);
     };
 
-    MobileNav.prototype.Open = function()
+    w.MobileSideNav.prototype.Open = function()
     {
-        window.cancelAnimationFrame(this.Inertia);
+        w.cancelAnimationFrame(this.Inertia);
 
         if(!this._isDrawed)
         {
@@ -189,9 +189,9 @@
         $('body').addClass(BODY_CLASS);
     };
 
-    MobileNav.prototype.Close = function()
+    w.MobileSideNav.prototype.Close = function()
     {   
-        window.cancelAnimationFrame(this.Inertia);
+        w.cancelAnimationFrame(this.Inertia);
 
         this.$menuDOM[0].style[Modernizr.prefixed('transform')] = _getTransform(0);
 
@@ -204,7 +204,7 @@
         $('body').removeClass(BODY_CLASS);
     };
 
-    MobileNav.prototype.Move = function(ammount)
+    w.MobileSideNav.prototype.Move = function(ammount)
     {
         if (ammount <= this.MenuWidth && ammount >= 0 ) {
             this.$menuDOM[0].style[Modernizr.prefixed('transform')] = _getTransform(ammount);
@@ -216,4 +216,4 @@
     {
         return 'translate3d(' + ammount + 'px, 0px, 0)';
     }
-}();
+}(window);
